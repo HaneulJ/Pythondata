@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_136791d69df647f4aded00472d441895 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_136791d69df647f4aded00472d441895" ></div>
+        
+</body>
+<script>    
+    
+            var map_136791d69df647f4aded00472d441895 = L.map(
+                "map_136791d69df647f4aded00472d441895",
+                {
+                    center: [37.648962, 126.895093],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8466d66034346b5a74115ca9d67ec34 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_136791d69df647f4aded00472d441895);
+        
+    
+            var marker_b40bc95bb7e047e5a47249d2165adef3 = L.marker(
+                [37.648962, 126.895093],
+                {}
+            ).addTo(map_136791d69df647f4aded00472d441895);
+        
+    
+            var icon_e093c76f30c44f5c91aedfe6f5880126 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b40bc95bb7e047e5a47249d2165adef3.setIcon(icon_e093c76f30c44f5c91aedfe6f5880126);
+        
+    
+        var popup_f56caa6dc0b44bbcb3a10c96ffdf0682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d5ae29afc3c46e2bdc55c70bffc7942 = $(`<div id="html_4d5ae29afc3c46e2bdc55c70bffc7942" style="width: 100.0%; height: 100.0%;"><div style="width:100px;color:purple;text-align:center"><h5>세자매 하우스</h5><hr><h6>창릉천 벚꽃 만개~</h6></div></div>`)[0];
+            popup_f56caa6dc0b44bbcb3a10c96ffdf0682.setContent(html_4d5ae29afc3c46e2bdc55c70bffc7942);
+        
+
+        marker_b40bc95bb7e047e5a47249d2165adef3.bindPopup(popup_f56caa6dc0b44bbcb3a10c96ffdf0682)
+        ;
+
+        
+    
+    
+            marker_b40bc95bb7e047e5a47249d2165adef3.bindTooltip(
+                `<div>
+                     우리집~
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
